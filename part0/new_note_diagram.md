@@ -3,7 +3,7 @@ sequenceDiagram
     participant browser
     participant server
     
-    broswer --> server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
+    broswer ->> server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
     activate server
     server -->>broswer: HTNL Header
     deactivate server
