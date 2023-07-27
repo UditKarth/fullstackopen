@@ -8,7 +8,7 @@ sequenceDiagram
     server->> browser: HTML Header
     deactivate server
 
-    Note right of server: The server sends the redirect request back to the browser, sending it to the location in the header
+    Note left of server: The server sends the redirect request back to the browser, sending it to the location in the header
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
     activate server
