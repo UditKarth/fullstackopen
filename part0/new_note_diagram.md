@@ -12,17 +12,17 @@ sequenceDiagram
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
     activate server
-    server-->>browser: HTML document
+    server-->>browser: The server retrieves the HTML DOM and sends it to the browser
     deactivate server
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
     activate server
-    server-->>browser: the css file
+    server-->>browser: The server retrieves the CSS rules and sends it to the browser
     deactivate server
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.js
     activate server
-    server-->>browser: the JavaScript file
+    server-->>browser: The server retrieves the JaveScript code and sends it to the browser
     deactivate server
 
     Note right of browser: The browser starts executing the JavaScript code that fetches the JSON from the server
