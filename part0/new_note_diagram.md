@@ -3,9 +3,9 @@ sequenceDiagram
     participant browser
     participant server
     
-    broswer->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
+    browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
     activate server
-    server->> broswer: HTNL Header
+    server->> browser: HTML Header
     deactivate server
 
     Note right of server: The server sends the redirect request back to the browser, sending it to the location in the header
