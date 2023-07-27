@@ -5,10 +5,10 @@ sequenceDiagram
     
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
     activate server
+    Note left of server: The server sends the redirect request back to the browser, sending it to the location in the header
     server->> browser: HTML Header
     deactivate server
 
-    Note left of server: The server sends the redirect request back to the browser, sending it to the location in the header
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
     activate server
