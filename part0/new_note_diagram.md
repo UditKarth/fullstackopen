@@ -7,7 +7,6 @@ sequenceDiagram
     activate server
     server -->>broswer: HTNL Header
     Note right of server: The server sends the redirect request back to the browser, sending it to the location in the header
-    deactivate server
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
     activate server
